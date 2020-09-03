@@ -1,7 +1,7 @@
 export const state = () => ({
   projects: [
     {
-      title: 'Stay In The Circle',
+      title: 'Stay In The Circle Game',
       class: 'bg1',
       icons: ['fab fa-react ic-react'],
       url: 'https://reverent-fermi-0b8273.netlify.app/',
