@@ -168,7 +168,7 @@ i.fa-info-circle:hover {
   }
 
   .project-details p {
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-sm);
   }
 }
 </style>
