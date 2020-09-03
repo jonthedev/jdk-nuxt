@@ -1,0 +1,168 @@
+/* Website Font */
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap");
+
+/* RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+/* VARIABLES */
+:root {
+  font-family: "MuseoModerno", cursive;
+  --bg-dark: rgb(19, 19, 19);
+  --bg-light: #fff;
+  --bg-black: #000;
+  --bg-gray: rgb(207, 205, 205);
+  --text-light: #fff;
+  --text-dark: #131313;
+  --text-green: #42b883;
+  --bg-gradient: linear-gradient(
+    150deg,
+    rgba(0, 0, 0, 1) 9%,
+    rgba(66, 184, 131, 1) 48%,
+    rgba(0, 0, 0, 1) 90%
+  );
+
+  --font-size-sm: 0.6rem;
+  --font-size-md: 0.9rem;
+}
+
+/* BASE STYLES */
+
+nav,
+footer {
+  padding: 1rem;
+  height: 10vh;
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Icon Colors */
+.ic-html5 {
+  color: #e44d26;
+}
+.ic-css3 {
+  color: #2965f1;
+}
+.ic-js {
+  color: #f7df1e;
+}
+.ic-vue-js {
+  color: #42b883;
+}
+
+.ic-react {
+  color: #61dbfb;
+}
+
+@media screen and (min-width: 1400px) {
+  body {
+    font-size: 1.3rem;
+  }
+}
+/* ANIMATIONS */
+/* SCREEN */
+@keyframes circle {
+  from {
+    transform: translateY(10%) translateX(0%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(1.1rem) translateY(-2rem);
+  }
+}
+
+@keyframes rectangle-1 {
+  from {
+    transform: translateY(0%) translateX(0%);
+  }
+
+  to {
+    transform: translateX(2.5rem) translateY(-1.5rem);
+    opacity: 0;
+  }
+}
+
+@keyframes rectangle-group {
+  from {
+    transform: translateX(-2rem) translateY(-1rem);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0.8rem) translateY(-0.8rem);
+    opacity: 1;
+  }
+}
+
+/* DEVELOPER */
+@keyframes arm-right {
+  from {
+    transform: translateX(-0.5%) translateY(-2%);
+  }
+
+  to {
+    transform: translateX(0%) translateY(0%);
+  }
+}
+
+@keyframes arm-left {
+  from {
+    transform: translateX(0.3%) translateY(1%);
+  }
+
+  to {
+    transform: translateX(0%) translateY(0%);
+  }
+}
+
+@keyframes arm-shadow {
+  from {
+    transform: translateX(0.5%) translateY(0.2%);
+  }
+
+  to {
+    transform: translateX(0%) translateY(0%);
+  }
+}
+
+@keyframes shoulder-right {
+  from {
+    transform: rotateZ(-0.4deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+/* LEAFS */
+@keyframes leaf-1 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(50deg) translateX(1rem);
+  }
+}
+
+@keyframes leaf-2 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(-20deg);
+  }
+}
