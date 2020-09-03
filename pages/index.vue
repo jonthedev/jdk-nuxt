@@ -11,9 +11,7 @@
         </template>
       </card>
       <card>
-        <template v-slot:projects
-          >I build websites and web applications.</template
-        >
+        <template v-slot:projects>Websites / Web Applications / Games</template>
       </card>
     </main>
   </div>
