@@ -5,12 +5,28 @@
 </template>
 
 <script>
-import ProjectsGrid from "../components/ProjectsGrid";
+import ProjectsGrid from '../components/ProjectsGrid'
 export default {
   components: {
     ProjectsGrid,
   },
-};
+  data() {
+    return {
+      title: 'Projects - Jonathan Front End Developer',
+    }
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          name: 'Projects Portfolio',
+          content: 'Projects Portfolio',
+        },
+      ],
+    }
+  },
+}
 </script>
 
 <style scoped>

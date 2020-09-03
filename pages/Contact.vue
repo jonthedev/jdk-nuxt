@@ -10,18 +10,34 @@
 </template>
 
 <script>
-import gsap from "gsap";
+import gsap from 'gsap'
 export default {
   mounted() {
-    gsap.to(".contact-icon", {
+    gsap.to('.contact-icon', {
       x: 0,
       duration: 1,
-      ease: "bounce",
+      ease: 'bounce',
       opacity: 1,
       stagger: 0.25,
-    });
+    })
   },
-};
+  data() {
+    return {
+      title: 'Contact - Jonathan Front End Developer',
+    }
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          name: 'Contact page',
+          content: 'Contact Email',
+        },
+      ],
+    }
+  },
+}
 </script>
 
 <style scoped>

@@ -6,7 +6,7 @@ export const state = () => ({
       icons: ['fab fa-react ic-react'],
       url: 'https://reverent-fermi-0b8273.netlify.app/',
       description:
-        'A game built in ReactJs. Players must move the mouse pointer within the orange circle and stay there until the counter reaches 50',
+        'Desktop game for the browser. Players must move the mouse pointer within the orange circle and stay there until the counter reaches 50.',
       tech: 'JavaScript, ReactJs',
     },
     {

@@ -21,6 +21,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
+        title: 'Jonathan D Kaonga | Front End Developer',
         content: process.env.npm_package_description || '',
       },
     ],

@@ -20,28 +20,41 @@
 </template>
 
 <script>
-import Card from "../components/Card";
-import DeveloperSVG from "../components/DeveloperSVG";
-import gsap from "gsap";
+import Card from '../components/Card'
+import DeveloperSVG from '../components/DeveloperSVG'
+import gsap from 'gsap'
 
 export default {
   mounted() {
-    gsap.to(".card", {
+    gsap.to('.card', {
       duration: 2,
       y: 0,
-      ease: "bounce",
+      ease: 'bounce',
       opacity: 1,
       stagger: 0.25,
-    });
+    })
   },
   components: {
     Card,
     DeveloperSVG,
   },
   data() {
-    return {};
+    return {
+      title: 'Home - Jonathan Front End Developer',
+    }
   },
-};
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          name: 'Home page',
+          content: 'Front End Developer Websites',
+        },
+      ],
+    }
+  },
+}
 </script>
 
 <style scoped>
@@ -54,8 +67,8 @@ export default {
 
   /* Explicit grid */
   grid-template-areas:
-    "a b"
-    "c d";
+    'a b'
+    'c d';
 
   grid-template-rows: repeat(2, 50%);
   grid-template-columns: repeat(2, 50%);
@@ -78,10 +91,10 @@ export default {
 @media screen and (max-width: 700px) {
   .home-grid {
     grid-template-areas:
-      "a"
-      "b"
-      "c"
-      "d";
+      'a'
+      'b'
+      'c'
+      'd';
     grid-template-rows: repeat(3, 31%);
     grid-template-columns: 1fr;
   }
