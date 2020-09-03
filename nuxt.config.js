@@ -24,6 +24,12 @@ export default {
         content: process.env.npm_package_description || '',
       },
     ],
+    script: [
+      {
+        src: 'https://kit.fontawesome.com/c747dcbc11.js',
+        crossorigin: 'anonymous',
+      },
+    ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
   /*
