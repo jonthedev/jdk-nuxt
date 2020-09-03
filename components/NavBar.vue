@@ -2,12 +2,12 @@
   <nav id="nav" class="light">
     <div class="logo">J D K</div>
     <div>
-      <router-link
+      <NuxtLink
         v-for="(item, i) in nav"
         :key="i"
         :to="item.url"
         :title="item.title"
-        >{{ item.title }}</router-link
+        >{{ item.title }}</NuxtLink
       >
     </div>
   </nav>
@@ -19,21 +19,21 @@ export default {
     return {
       nav: [
         {
-          title: "Home",
-          url: "/",
+          title: 'Home',
+          url: '/',
         },
         {
-          title: "Projects",
-          url: "/projects",
+          title: 'Projects',
+          url: '/projects',
         },
         {
-          title: "Contact",
-          url: "/contact",
+          title: 'Contact',
+          url: '/contact',
         },
       ],
-    };
+    }
   },
-};
+}
 </script>
 
 <style scoped>
