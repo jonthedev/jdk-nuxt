@@ -24,14 +24,14 @@ export default {
     return {
       footerLinks: [
         {
-          title: "Github",
-          url: "https://github.com/jonthedev",
-          icon: "fab fa-github",
+          title: 'Github',
+          url: 'https://github.com/jonthedev',
+          icon: 'fab fa-github',
         },
       ],
-    };
+    }
   },
-};
+}
 </script>
 
 <style scoped>
@@ -42,17 +42,15 @@ export default {
   flex-wrap: wrap;
 }
 
+i,
 i.fa-github {
-  font-size: 2rem;
-}
-
-i {
   color: #42b883;
   margin-left: 0.5rem;
   font-size: 1.3rem;
 }
 
-i:hover {
+i:hover,
+i.fa-github {
   color: var(--bg-gray);
 }
 
@@ -66,13 +64,15 @@ span i {
     font-size: var(--font-size-sm);
   }
 
-  i {
+  i,
+  i.fa-github {
     font-size: 1.2rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  i {
+  i,
+  i.fa-github {
     font-size: 1.7rem;
   }
 }

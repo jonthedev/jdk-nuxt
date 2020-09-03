@@ -65,7 +65,7 @@ export default {
 
 @media screen and (max-width: 700px) {
   #nav a {
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-sm);
   }
 }
 </style>
