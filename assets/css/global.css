@@ -1,5 +1,5 @@
 /* Website Font */
-@import url("https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
 
 /* RESET */
 * {
@@ -14,7 +14,7 @@ body {
 
 /* VARIABLES */
 :root {
-  font-family: "MuseoModerno", cursive;
+  font-family: 'MuseoModerno', cursive;
   --bg-dark: rgb(19, 19, 19);
   --bg-light: #fff;
   --bg-black: #000;
@@ -70,7 +70,7 @@ main {
   }
 }
 /* ANIMATIONS */
-/* SCREEN */
+/* SCREEN WINDOW */
 @keyframes circle {
   from {
     transform: translateY(10%) translateX(0%);
@@ -78,18 +78,19 @@ main {
   }
 
   to {
-    transform: translateX(1.1rem) translateY(-2rem);
+    transform: translateX(0.7rem) translateY(-1.15rem);
   }
 }
 
 @keyframes rectangle-1 {
   from {
     transform: translateY(0%) translateX(0%);
+    opacity: 0;
   }
 
   to {
-    transform: translateX(2.5rem) translateY(-1.5rem);
-    opacity: 0;
+    transform: translateX(1.6rem) translateY(-1rem);
+    border-radius: 0;
   }
 }
 
@@ -100,7 +101,7 @@ main {
   }
 
   to {
-    transform: translateX(0.8rem) translateY(-0.8rem);
+    transform: translateX(0.4rem) translateY(-0.6rem);
     opacity: 1;
   }
 }
