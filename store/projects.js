@@ -10,15 +10,6 @@ export const state = () => ({
       tech: 'JavaScript, ReactJs',
     },
     {
-      title: 'Make A Drink',
-      class: 'bg1',
-      icons: ['fab fa-react ic-react'],
-      url: 'https://optimistic-lichterman-bff1a7.netlify.app/',
-      description:
-        'Web Application with React.js, the project plugs into The DataDb cocktail api so users can select popular drink recipes.',
-      tech: 'JavaScript, ReactJs',
-    },
-    {
       title: 'Spotify Landing Page',
       class: 'bg1',
       icons: ['fab fa-html5 ic-html5', 'fab fa-css3-alt ic-css3'],
